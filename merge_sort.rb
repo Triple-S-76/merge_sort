@@ -1,4 +1,13 @@
-array = [9, 1, 3, 5, 7, 6, 4, 8, 2]
+amount_of_numbers = 100
+
+array = []
+
+amount_of_numbers.times do
+  array << rand(10000)
+end
+
+p 'Unsorted Array:'
+p array
 
 def merge_sort(array, result = [])
   # p "Start: #{array}"
@@ -46,5 +55,7 @@ def merge_sort(array, result = [])
     result
   end
 end
+
+p 'Sorted Array'
 
 p merge_sort(array)
